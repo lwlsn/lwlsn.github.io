@@ -1,39 +1,133 @@
-@charset "UTF-8";
-
-body {
-    background:#f5ffff;
-    font-family: sans-serif;
-    width: 87.5%;
-    margin-left: auto;
-    margin-right: auto;
-    /* max-width: 1400px; */
-    counter-reset: sidenote-counter;
-}
-
-h1 {
-    font-size: 40px;
-    color:#333333;
-    letter-spacing: 2px;
-    margin-bottom:40px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+html, button, input, select, textarea,
+.MJXc-TeX-unknown-R,
+.pure-g [class*="pure-u"] {
+font-family: Roboto Condensed, Roboto, Helvetica, Arial, sans-serif; 
 }
 
 
-h2 {
-    font-size:20px;
-    color: #333333;
-    font-style: italic;
-    font-weight: 400;
-    margin-top: 2.1rem;
-    margin-bottom: 1.4rem;
-    font-size: 2.2rem;
-    line-height: 1; 
+body	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align:auto;
+	font-family: Roboto Condensed, Roboto, Helvetica, Arial, sans-serif; 
+	color: #58595b;
+	padding-bottom: 20px;
+    }
+    
+#wrapper	{
+        margin: 10px auto;
+        padding: 40px;
+        padding-top: 30px;
+        border: 0;
+        width: 650px; 	
+    }
+    
+html>#wrapper	{
+        width: 650px;
+    } 
+
+
+img { border:none }
+
+
+/*  hide to assist skipping navigation */
+.hide {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+    
+.float-left img  {
+    float: left;
+    margin: 0 25px 25px 0;
+}
+        
+
+.right {
+    text-align: right;
+}
+    
+
+.float-right img  {
+    float: right;
+    margin: 0 0 25px 25px;
+}
+
+
+
+
+a:link, a:visited {
+	font-weight : normal; 
+	text-decoration : none;
+	color: #87CEEB;
+	background: transparent; 
+	}
+
+	
+a:hover, a:active {
+	font-weight : normal; 
+	text-decoration : underline;
+    color: #B0E0E6;
+	background: transparent; 
+	}
+
+
+strong a:link, strong a:visited, strong a:hover, strong a:active {
+	font-weight: bold;
+}
+
+
+.red {	
+	color: #FF0000;
+}
+
+#dulllink {
+	color: #b3b3b3; /* grey */
+}
+
+/* #menu {
+	color: #b3b3b3; 
+    background: transparent; 
+    margin-left: 20px;
+} */
+
+    
+
+h1, h2, h3, h4, h5, h6	{
+	font-family: Roboto Condensed, Roboto, Helvetica, Arial, sans-serif; 
+    font-weight: normal;
+	letter-spacing: 1px;
+	text-align:left;
+	color:   #334C80; /* #4682B4; #C8F3FF*/
+	}
+	
+p, address, dl	{
+	line-height: 160%;
+	text-align: left;
+	margin-top: 0.75em;
+	margin-bottom: 1.25em;
+	width: auto;
+}
+
+
+ul, ol, pre {
+    text-align: left;
+    width: auto;
+    margin-top: 0.5em;
+    margin-bottom: 1.75em;
+}
+
+li {
+width: auto;
+text-align: left;
+margin-top: 1em;
+margin-bottom: 1em;
 }
 
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: Roboto Condensed, Roboto, Helvetica, Arial, sans-serif; 
     color: #333333;
     padding: 0px;
     list-style: none;
@@ -45,6 +139,8 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
+
 
 a {
     text-decoration: none;
@@ -59,6 +155,103 @@ div {
     display: inline-block;
     padding: 50px;
     top: 100px;
-    color: gray;
+    color: gray; 
   } 
  
+
+
+ /* footer */
+ #footer {
+    margin-top: 160px;
+    }
+   
+   #footer p {
+      font-size: small;        
+      margin-top: 0;
+  } 
+  
+  figure  {
+      margin: 0 0px 3em 0;
+  }
+  
+  figcaption {
+      margin: 1.5em 0px 2.5em 0;
+      text-align: center;
+      font-size: x-small; 
+      font-weight: bold;
+  }
+   
+   /* Changes  to make all grey */
+  body, #wrapper {  
+      background-color: #F5F5F5; /*  (grey) #F8F8FF; /*#fff; */
+      color:  #333
+  }
+  
+  
+  /*************** STRIP OUT OLD gumph **********************/
+  
+  
+  h2, h3, h4, h5, h6	{
+      margin-top: 1.75em;
+      margin-bottom: 0.75em;
+  }
+  
+  
+  
+  h1	{
+      margin-top: 0; 
+      font-size:   x-large;      
+  }
+  
+  
+  h2	{
+      font-size:    x-large;     
+  }
+  
+  
+  h3	{ 
+      font-size: large;      
+  }
+  
+          
+  h4	{
+      font-weight: normal;
+  }
+  
+  
+  h5	{
+       font-size:    small;      
+      }
+  
+  h6	{
+       font-size:    x-small;      
+      }
+  
+      
+  div, p, th, td, ol, ul, li, dd, dt  {
+      font-size:    medium;      
+  }
+  
+  /* 
+  SC Supercolider code colorisation 
+  from 'frontend.css'
+  */
+  
+  .str { color: #606060; } /* strings */
+  .kwd { color: #3333BF; } /* special values like true, nil.. */
+  .com { color: #BF0000; } /* comments */
+  .typ { color: #0000BF; } /* class names */
+  .lit { color: #000000; } /* numbers and character literals */
+  .pun { color: #000000; } /* punctuation */
+  .pln { color: #000000; } /* plain text, methods and variable names */
+  .tag { color: #6666BF; } /* special variables like super, thisProcess... */
+  .dec { color: #0000FF; } /* declarations like var, const... */
+  .atn { color: #007300; } /* symbols */
+  .atv { color: #FF6600; } /* environment vars */
+  
+  /* Code background colour */
+  pre, #prettyprint {  
+      background-color: #FFFFFD; /*  off-white */
+  }
+  
+
