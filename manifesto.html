@@ -4,7 +4,7 @@
 <head>
     <title> Manifesto</title>
     <!-- link to main stylesheet -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -21,12 +21,68 @@
     	</ul>
     </nav>
 
+    <div class="main">
 
+
+     <h1> i - Musical Artificial Intelligence </h1>   
+
+
+     <p> <i> Will Artificial Intelligence replace musicians? </i> </p> 
+
+    <button id="question1-yes" onclick="displayDialogueYes()" > Yes</button>
+
+    <button id= question1-no onclick="displayDialogueNo()"> No </button>
+        
+    <div id="yes-div" style="display: none;">
+        <p> In some senses, yes. Computers are very good at large scale calculation. We can now get them to recognise pattern and, to a lesser extent, reproduce them through computational means.</p>
+
+        <p> If a computer can create a disembodied version of a musician and create music in their style (see multiple attempts on recreation of the works of Bach) does this, haven't we in some senses replaced the musician? </p>
+
+        <p> <b> Replacing musicians with computers forces us to evaluate what it means to create music in the first place. </b> </p>
+    </div>
+
+    <div id="no-div" style="display: none;">
+        <p>Artificial intelligence won't (most likely) replace musicians outright in the near future. Sentient AI is still mostly only observed in science fiction, although science fiction often shapes our technological landscapes. </p> 
+        
+        <p> Pushing the sentient narrative is often a political choice to divert people's attention from current technological landscapes and the economical meanings of this. </p>
+
+        <p> <b> Aritificial Intelligence is another technology, as computers, transducers, electricity were before it. The goal of technology should be to help automate processes and allow being human to become easier. </b></p>
+    </div>
+
+   
+    <script> 
+        
+        function displayDialogueYes() {
+            var x = document.getElementById("yes-div");
+         if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+              x.style.display = "none";
+            }
+        }
+
+
+        function displayDialogueNo() {
+            var y = document.getElementById("no-div");
+            if (y.style.display == "none"){
+                y.style.display = "block";
+            } else {
+                y.style.display = "none";
+            }
+        }
+    </script> 
+
+     <h1> ii - Creativity and Collaboration </h1>
+
+
+     <h1> iii - The (Past/Future) of Music and Technology </h1>
     <p> class Research { </p>
        <p> public: </p>
 
        <p> private: </p>
     <p> } </p>
+
+    </div>
 
 </body>
 
