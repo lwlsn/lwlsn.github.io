@@ -74,11 +74,11 @@ strong a:link, strong a:visited, strong a:hover, strong a:active {
 	color: #b3b3b3; /* grey */
 }
 
-/* #menu {
+#menu {
 	color: #b3b3b3; 
     background: transparent; 
     margin-left: 20px;
-} */
+}
 
     
 
@@ -117,7 +117,7 @@ margin-bottom: 1em;
 nav ul, footer ul {
     font-family: Roboto Condensed, Roboto, Helvetica, Arial, sans-serif; 
     color: #333333;
-    padding: 0px;
+    padding: auto;
     list-style: none;
     font-weight: bold;
 }
