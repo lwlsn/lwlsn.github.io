@@ -5,74 +5,8 @@ font-family: Roboto Condensed, Roboto, Helvetica, Arial, sans-serif;
 }
 
 
-body	{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	text-align:auto;
-	font-family: Roboto Condensed, Roboto, Helvetica, Arial, sans-serif; 
-	color: #58595b;
-	padding-bottom: 20px;
-    }
-    
-
 img { border:none }
 
-
-/*  hide to assist skipping navigation */
-.hide {
-    height: 0;
-    width: 0;
-    overflow: hidden;
-}
-    
-.float-left img  {
-    float: left;
-    margin: 0 25px 25px 0;
-}
-        
-
-.right {
-    text-align: right;
-}
-    
-
-.float-right img  {
-    float: right;
-    margin: 0 0 25px 25px;
-}
-
-
-
-
-a:link, a:visited {
-	font-weight : normal; 
-	text-decoration : none;
-	color: #87CEEB;
-	background: transparent; 
-	}
-
-	
-a:hover, a:active {
-	font-weight : normal; 
-	text-decoration : underline;
-    color: #B0E0E6;
-	background: transparent; 
-	}
-
-
-strong a:link, strong a:visited, strong a:hover, strong a:active {
-	font-weight: bold;
-}
-
-
-.red {	
-	color: #FF0000;
-}
-
-#dulllink {
-	color: #b3b3b3; /* grey */
-}
 
 #menu {
 	color: #b3b3b3; 
@@ -87,7 +21,7 @@ h1, h2, h3, h4, h5, h6	{
     font-weight: normal;
 	letter-spacing: 1px;
 	text-align:left;
-	color:   #334C80; /* #4682B4; #C8F3FF*/
+	color:   #FFFFFF; /* #4682B4; #C8F3FF*/
 	}
 	
 p, address, dl	{
@@ -103,21 +37,20 @@ ul, ol, pre {
     text-align: left;
     width: auto;
     margin-top: 0.5em;
-    margin-bottom: 1.75em;
+    margin-bottom: 0.5em;
 }
 
 li {
 width: auto;
 text-align: left;
 margin-top: 1em;
-margin-bottom: 1em;
+margin-bottom: 0.5em;
 }
 
 
 nav ul, footer ul {
     font-family: Roboto Condensed, Roboto, Helvetica, Arial, sans-serif; 
     color: #333333;
-    padding: auto;
     list-style: none;
     font-weight: bold;
 }
@@ -132,7 +65,7 @@ nav ul li, footer ul li {
 
 a {
     text-decoration: none;
-    color: #c4c4c4;
+    color: #323bcf;
 }
 a:hover {
     text-decoration: underline;
@@ -141,9 +74,9 @@ a:hover {
 
 div {
     display: inline-block;
-    padding: 50px;
-    top: 100px;
-    color: gray; 
+    padding: 20px;
+    top: 20px;
+    color: #FFFFFF; 
   } 
  
 
@@ -171,7 +104,7 @@ div {
    
    /* Changes  to make all grey */
   body, #wrapper {  
-      background-color: #F5F5F5; /*  (grey) #F8F8FF; /*#fff; */
+      background-color: #121212; /*  (grey) #F8F8FF; /*#fff; */
       color:  #333;
       margin: auto;
   }
