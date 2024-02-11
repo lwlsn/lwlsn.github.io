@@ -71,6 +71,7 @@ nav ul {
     font-family: 'Orbitron', sans-serif;
     list-style-type: none;
     padding: 0;
+    margin:0;
     overflow: hidden;
     background-color: #333; /* Dark background for contrast */
 }
@@ -133,7 +134,8 @@ div {
   body, #wrapper {  
       background-color: #121212; /*  (grey) #F8F8FF; /*#fff; */
       color:  #333;
-      margin: auto;
+      margin: 0;
+      padding:0;
   }
   
  img {
