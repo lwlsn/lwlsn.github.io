@@ -23,9 +23,39 @@
 
     <div class="container">
 
-            <p> Coming Soon</p>
+        <div class="slider">
+            <div class="slide active" style="background-image:'assets/image1.jpg'">
+                <div class="caption">Project 1 Description</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/image1.jpg');">
+                <div class="caption">Project 2 Description</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/image1.jpg');">
+                <div class="caption">Project 3 Description</div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
 
     </div>
+
+
+    <!-- show slides script -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
 
 
 </body>
