@@ -145,25 +145,6 @@ div {
 
 
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: -5px; /* Adjust spacing between images */
-}
-
-.gallery-item {
-    flex: 1 0 21%; /* Adjust item width */
-    margin: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-}
-
-
 .slider {
     width: 100%;
     position: relative;
